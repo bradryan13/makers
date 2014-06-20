@@ -1,0 +1,62 @@
+/*------------------------------------------------------------------
+[Header Stylesheet]
+
+Project:	Makers
+Version:	1.0
+
+1. Header
+
+--------------------------------------------------------------------*/
+
+
+header {
+	position: absolute;
+	height: 150px;
+	line-height: 150px;
+	width: 1280px;
+	left: 50%;
+	margin-left: -640px;
+	padding: 0 100px;
+	z-index: 1;
+}
+
+#branding {
+	float: left;
+	display: block;
+	position: relative;
+	img {
+		width: 160px;
+	}
+	:before {
+	  content: "";
+	  position: absolute;
+	  width: 67px;
+	  height: 5px;
+	  bottom: 40px;
+	  left: 0;
+	  background-color: @red;
+	}
+}
+
+nav {
+	float: right;
+	ul {
+		margin-right: -20px;
+		li {
+			float: left;
+			padding: 3px 20px 0 20px;
+			color: #FFF;
+			font-family: @secondaryFont;
+			font-size: 17px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	header {
+		padding: 0 100px;
+    	width: 100%;
+    	margin-left: 0;
+    	left: 0;
+	}
+}

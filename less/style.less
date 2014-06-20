@@ -1,0 +1,81 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	USA Rugby Project Stats
+Version:	2.0
+
+1. Imports
+2. Colors
+
+--------------------------------------------------------------------*/
+
+/* 1. Imports  -----------------------------------------------------*/
+
+//vendor
+@import "vendor/reset.less";
+@import "vendor/foundation.less";
+@import "vendor/mixins.less";
+
+
+//global
+@import "header.less";
+@import "footer.less";
+
+
+//specific
+@import "specific/portfolio.less";
+@import "specific/summary.less";
+@import "specific/hero.less";
+
+
+
+/* 2. Colors  -----------------------------------------------------*/
+
+@blue: #5F7C97;
+@red: #c61e4d;
+
+@grey: #9DA6AF;
+
+/* 2. Fonts  -----------------------------------------------------*/
+
+@primaryFont: "arial";
+@secondaryFont: "jaf-facitweb";
+
+h1, h2, h3 {
+	font-family: @secondaryFont;
+}
+
+/* 3. Body  -----------------------------------------------------*/
+body {
+	background: #FFF;
+	font-size: 13px;
+	color: #7F91A2; 
+	font-family: @primaryFont;
+	-webkit-font-smoothing: antialiased;
+}
+
+main {
+	padding-top: 30px;
+}
+
+@rowWidth: 1000px;
+
+
+/* 4. Utilities  -----------------------------------------------------*/
+
+a.btn {
+	padding: 12px 40px;
+	.rounded(5px);
+	background: @red;
+	color: #FFF;
+	text-decoration: none;
+	margin-top: 25px;
+	font-size: 16px;
+	display: block;
+	float: left;
+	font-family: @secondaryFont;
+	&.ghost {
+		background: transparent;
+		border: 3px solid @red;
+	}
+}
