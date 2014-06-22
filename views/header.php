@@ -21,9 +21,8 @@
 
   		<nav>
         <ul>
-          <li>Work</li>
-          <li>About</li>
-          <li>Blog</li>
+          <li>Projects</li>
+          <li>Culture</li>
           <li>Contact</li>
   		</nav>
   	</div>
