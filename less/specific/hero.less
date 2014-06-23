@@ -9,25 +9,40 @@ Version:	1.0
 --------------------------------------------------------------------*/
 
 #hero {
-	height: 650px;
-	background: url('../img/hero-bg.jpg') center top no-repeat;
+	height: 100%;
+	width: 100%;
+	background: rgba(37, 53, 70, 1);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	position: relative;
-	.row {
-		position: relative;
-		height: 650px;
+	overflow: hidden;
+	.overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(37, 53, 70, 0.9);
+		z-index: 1;
 	}
 }
 
+#big-video-wrap {
+    display: none;
+}
+
 #sell {
+	z-index: 2;
 	color: #FFF;
-	margin-top: 220px;
-	width: 36%;
+	position: absolute;
+	top: 50%;
+	height: 200px;
+	margin-top: -140px;
+	max-width: 1030px;
 	h2 {
-		font-size: 28px;
-		font-weight: bold;
+		font-size: 48px;
 		line-height: 1.3;
 		margin-bottom: 10px;
-		letter-spacing: -1px;
 	}
 	p {
 		font-size: 17px;
@@ -35,11 +50,82 @@ Version:	1.0
 	}
 }
 
-#monitor {
-	background: url('../img/monitor.png') center top no-repeat;
+#projects {
 	position: absolute;
+	bottom: 0;
+	left: 0;
 	right: 0;
-	height: 519px;
-	width: 672px;
-	bottom: 1px;
+	z-index: 1;
+	border-top: 6px solid rgba(0,0,0,0.2);
+	.project {
+		width: 25%;
+		float: left;
+		height: 105px;
+		position: relative;
+		cursor: pointer;
+		overflow: hidden;
+		border-top: 2px solid rgba(0,0,0,0.3);
+		h3 {
+			margin-top: 55px;
+			color: #FFF;
+			margin-left: 20px;
+			font-size: 17px;
+			letter-spacing: -1px;
+			position: relative;
+			overflow: hidden;
+			padding: 8px;
+			display: inline-block;
+			&:before {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: #fff;
+				content: '';
+				-webkit-transition: top 0.2s;
+				-moz-transition: top 0.2s;
+				transition: top 0.2s;
+			}
+			&:after {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 2px;
+				height: 2px;
+				background: #fff;
+				content: '';
+				height: 100%;
+			}
+		} 
+		&.aig {
+			background: url('../img/aig.jpg') no-repeat center center; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+
+		}
+		&.usawr {
+			background: url('../img/usawr.jpg') no-repeat center center; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		&.silverbacks {
+			background: url('../img/silverbacks.jpg') no-repeat center center; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		&.rookie {
+			background: url('../img/rookie.jpg') no-repeat center center; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	}
 }

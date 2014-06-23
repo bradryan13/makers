@@ -5,12 +5,7 @@
 
 <?php require('views/summary.php'); ?>
 
-<?php require('views/portfolio.php'); ?>
-
 <?php require('views/footer.php'); ?>
-
-
-
 
 
  
