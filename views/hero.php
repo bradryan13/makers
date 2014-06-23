@@ -19,6 +19,4 @@
 	</div>
 
 
-	<?php require('views/portfolio.php'); ?>
-
 </div>
