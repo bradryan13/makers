@@ -6,7 +6,7 @@
 
 
 <div class="project aig">
-<h3>USA Rugby</h3>
+<h3>USA v All Blacks</h3>
 </div>
 
 

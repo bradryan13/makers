@@ -68,8 +68,9 @@ Version:	1.0
 		h3 {
 			margin-top: 55px;
 			color: #FFF;
+			font-weight: bold;
 			margin-left: 20px;
-			font-size: 17px;
+			font-size: 18px;
 			letter-spacing: -1px;
 			position: relative;
 			overflow: hidden;
@@ -77,10 +78,10 @@ Version:	1.0
 			display: inline-block;
 			&:before {
 				position: absolute;
-				bottom: 0;
+				bottom: 2px;
 				left: 0;
 				width: 100%;
-				height: 2px;
+				height: 1px;
 				background: #fff;
 				content: '';
 				-webkit-transition: top 0.2s;
@@ -89,14 +90,13 @@ Version:	1.0
 			}
 			&:after {
 				position: absolute;
-				top: 0;
+				top: 5px;
+				bottom: 3px;
 				left: 0;
-				width: 2px;
-				height: 2px;
+				width: 1px;
 				background: #fff;
 				content: '';
-				height: 100%;
-			}
+				}
 		} 
 		&.aig {
 			background: url('../img/aig.jpg') no-repeat center center; 
