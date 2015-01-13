@@ -32,10 +32,13 @@ Version:	2.0
 
 /* 2. Colors  -----------------------------------------------------*/
 
+@darkBlue: #1B2B3F;
 @blue: #5F7C97;
 @red: #c61e4d;
 
-@grey: #627283;
+@grey: #8A99A8;
+
+@lightGrey: #E6E9EC;
 
 /* 2. Fonts  -----------------------------------------------------*/
 
@@ -54,6 +57,51 @@ body {
 	font-family: @primaryFont;
 	-webkit-font-smoothing: antialiased;
 	height: 100%;
+	&:after {
+		height: 18px; 
+		width: 100%;
+		bottom: 0;
+		background: @lightGrey;
+		position: fixed;
+		z-index: 100;
+		content: '';
+		z-index: 100;
+	}
+	&:before {
+		height: 18px; 
+		width: 100%;
+		top: 0;
+		background: @lightGrey;
+		position: fixed;
+		z-index: 100;
+		content: '';
+		z-index: 100;
+	}
+}
+
+#border-y {
+	&:after {
+		height: 100%; 
+		width: 18px;
+		bottom: 0;
+		top: 0;
+		right: 0;
+		background: @lightGrey;
+		position: fixed;
+		z-index: 100;
+		content: '';
+		z-index: 100;
+	}
+	&:before {
+		width: 18px;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		background: @lightGrey;
+		position: fixed;
+		z-index: 100;
+		content: '';
+	}
 }
 
 #wrapper {
@@ -77,14 +125,39 @@ a.btn {
 	background: @red;
 	color: #FFF;
 	text-decoration: none;
+	margin-right: 25px;
 	margin-top: 10px;
 	font-size: 16px;
 	display: block;
 	float: left;
 	font-family: @secondaryFont;
 	font-weight: bold;
+	background: @red;
+	border: 3px solid @red;
+	.transition(200ms);
+	&:hover {
+		background: lighten(@red, 8%);
+		border: 3px solid lighten(@red, 8%);
+	}
 	&.ghost {
 		background: transparent;
-		border: 3px solid @red;
+		border: 3px solid #FFF;
+		&:hover {
+			background: rgba(255, 255, 255, 0.1);
+		}
+	}
+}
+
+@media (max-width: 1340px) {
+	header {
+    	width: 100%;
+    	margin-left: 0;
+    	left: 0;
+	}
+	.row {
+		padding: 0 100px;
+	}
+	#sell {
+		max-width: 80%;
 	}
 }

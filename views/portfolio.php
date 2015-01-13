@@ -1,24 +1,14 @@
-<div id="projects" class="clearfix">
+<div id="projects">
+	<div class="row">
 
-<div class="project usawr">
-<h3>Wheelchair Rugby</h3>
-</div>
+		<div class="columns large-13">
+			<h2>Our Work</h2>
+			<p class="large">With our reliable and scalable cloud infrastructure, me, and nothing to install, patch, or upgrade. Ever. With our reliable and scalable cloud infrastructure, me, and nothing to install, patch, or upgrade. Ever. With our reliable and scalable cloud infrastructure, me, and nothing to install, patch, or upgrade. Ever.</p>
+		</div>
 
+		<div class="columns large-11">
+			<img src="img/computer.png">
+		</div>
 
-<div class="project aig">
-<h3>USA v All Blacks</h3>
-</div>
-
-
-<div class="project rookie">
-<h3>Rookie Rugby</h3>
-</div>
-
-
-<div class="project silverbacks">
-<h3>ATL Silverbacks</h3>
-</div>
-
-
-
+	</div>
 </div>

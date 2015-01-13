@@ -23,39 +23,26 @@ header {
 	float: left;
 	display: block;
 	position: relative;
+	background: @darkBlue;
+	height: 200px;
+	width: 200px;
+	text-align: center;
 	img {
 		width: 160px;
-	}
-	:before {
-	  content: "";
-	  position: absolute;
-	  width: 67px;
-	  height: 5px;
-	  bottom: 40px;
-	  left: 0;
-	  background-color: @red;
 	}
 }
 
 nav {
 	float: right;
 	ul {
-		margin-right: -20px;
 		li {
 			float: left;
 			padding: 3px 20px 0 20px;
 			color: #FFF;
 			font-family: @secondaryFont;
-			font-size: 17px;
+			font-size: 20px;
+			font-weight: bold;
 		}
 	}
 }
 
-@media (max-width: 1230px) {
-	header {
-		padding: 0 100px;
-    	width: 100%;
-    	margin-left: 0;
-    	left: 0;
-	}
-}

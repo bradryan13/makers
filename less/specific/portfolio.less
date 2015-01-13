@@ -8,3 +8,40 @@ Version:	1.0
 
 --------------------------------------------------------------------*/
 
+#projects {
+	background: #F7F8FA;
+	padding-bottom: 20px;
+	img {
+		text-align: right;
+		margin-top: -30px;
+	}
+	h2 {
+		font-size: 46px;
+		text-align: left;
+		line-height: 1.2;
+		letter-spacing: -2px;
+		position: relative;
+		margin-top: 100px;
+		font-weight: bold;
+		color: @blue;
+		&:before {
+		  content: "";
+		  position: absolute;
+		  width: 332px;
+		  height: 7px;
+		  top: -30px;
+		  left: 0;
+		  background-color: #FFF;
+		}
+	}
+	p {
+		color: @grey;
+		font-size: 15px;
+		line-height: 1.6;
+		&.large {
+			margin-top: 20px;
+			font-size: 18px;
+			font-family: @secondaryFont;
+		}
+	}
+}

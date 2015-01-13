@@ -11,7 +11,7 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
-
+  <div id="border-y"></div>
 
   <header>
   	
@@ -22,10 +22,11 @@
 
   		<nav>
         <ul>
-          <li>Projects</li>
-          <li>Culture</li>
-          <li>Contact</li>
+          <li>projects</li>
+          <li>culture</li>
+          <li>contact</li>
   		</nav>
   	</div>
 
   </header>
+

@@ -2043,8 +2043,8 @@ select {
 }
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?e0uur6');
-  src: url('../fonts/icomoon.eot?#iefixe0uur6') format('embedded-opentype'), url('../fonts/icomoon.woff?e0uur6') format('woff'), url('../fonts/icomoon.ttf?e0uur6') format('truetype'), url('../fonts/icomoon.svg?e0uur6#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?8tisp4');
+  src: url('../fonts/icomoon.eot?#iefix8tisp4') format('embedded-opentype'), url('../fonts/icomoon.woff?8tisp4') format('woff'), url('../fonts/icomoon.ttf?8tisp4') format('truetype'), url('../fonts/icomoon.svg?8tisp4#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2061,26 +2061,11 @@ select {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-clock:before {
-  content: "\e602";
-}
-.icon-tablet:before {
-  content: "\e603";
-}
-.icon-stats:before {
-  content: "\e604";
-}
-.icon-lightbulb:before {
-  content: "\e605";
+.icon-loop:before {
+  content: "\e600";
 }
 .icon-browser:before {
   content: "\e606";
-}
-.icon-chat:before {
-  content: "\e607";
-}
-.icon-banknote:before {
-  content: "\e601";
 }
 .icon-gauge:before {
   content: "\e609";
@@ -2113,39 +2098,24 @@ header {
   float: left;
   display: block;
   position: relative;
+  background: #1b2b3f;
+  height: 200px;
+  width: 200px;
+  text-align: center;
 }
 #branding img {
   width: 160px;
 }
-#branding :before {
-  content: "";
-  position: absolute;
-  width: 67px;
-  height: 5px;
-  bottom: 40px;
-  left: 0;
-  background-color: #c61e4d;
-}
 nav {
   float: right;
-}
-nav ul {
-  margin-right: -20px;
 }
 nav ul li {
   float: left;
   padding: 3px 20px 0 20px;
   color: #FFF;
   font-family: "raleway";
-  font-size: 17px;
-}
-@media (max-width: 1230px) {
-  header {
-    padding: 0 100px;
-    width: 100%;
-    margin-left: 0;
-    left: 0;
-  }
+  font-size: 20px;
+  font-weight: bold;
 }
 /*------------------------------------------------------------------
 [ Projects Stylesheet ]
@@ -2156,6 +2126,43 @@ Version:	1.0
 1. Layout
 
 --------------------------------------------------------------------*/
+#projects {
+  background: #F7F8FA;
+  padding-bottom: 20px;
+}
+#projects img {
+  text-align: right;
+  margin-top: -30px;
+}
+#projects h2 {
+  font-size: 46px;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  position: relative;
+  margin-top: 100px;
+  font-weight: bold;
+  color: #5f7c97;
+}
+#projects h2:before {
+  content: "";
+  position: absolute;
+  width: 332px;
+  height: 7px;
+  top: -30px;
+  left: 0;
+  background-color: #FFF;
+}
+#projects p {
+  color: #8a99a8;
+  font-size: 15px;
+  line-height: 1.6;
+}
+#projects p.large {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "raleway";
+}
 /*------------------------------------------------------------------
 [ Summary Stylesheet ]
 
@@ -2166,31 +2173,35 @@ Version:	1.0
 
 --------------------------------------------------------------------*/
 #summary {
-  padding: 70px 0;
-  background: #F2F2F7;
+  padding-top: 70px;
+  margin-bottom: 0px;
+  background: #FFF;
   position: relative;
   z-index: 2;
 }
 #summary .icon {
   font-size: 22px;
-  color: #99a5b2;
+  color: #c5ccd4;
 }
 #summary h2 {
   font-size: 46px;
   text-align: left;
-  line-height: 1.2;
+  line-height: 1.15;
   letter-spacing: -2px;
   position: relative;
-  margin-top: 25px;
-  font-weight: bold;
+  margin-top: 5px;
+  font-weight: 700;
   color: #5f7c97;
+}
+#summary h2 span {
+  font-weight: 300;
 }
 #summary h2:before {
   content: "";
   position: absolute;
   width: 90%;
   height: 7px;
-  top: -40px;
+  top: -25px;
   left: 0;
   background-color: #5f7c97;
 }
@@ -2199,9 +2210,9 @@ Version:	1.0
 }
 #summary h3 {
   color: #5f7c97;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 200;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-weight: bold;
 }
 #summary h3 span {
@@ -2209,8 +2220,9 @@ Version:	1.0
   font-size: 30px;
 }
 #summary p {
-  color: #627283;
-  font-size: 14px;
+  color: #8a99a8;
+  font-size: 15px;
+  font-weight: 500;
   line-height: 1.6;
 }
 #summary p.large {
@@ -2237,15 +2249,13 @@ Version:	1.0
   position: relative;
   overflow: hidden;
 }
-#hero .overlay {
+#hero .inner:after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(37, 53, 70, 0.9);
+  background: rgba(17, 34, 53, 0.45);
+  content: '';
   z-index: 1;
-}
-#big-video-wrap {
-  display: none;
 }
 #sell {
   z-index: 2;
@@ -2255,90 +2265,13 @@ Version:	1.0
   height: 200px;
   margin-top: -100px;
   max-width: 1030px;
+  font-weight: 300;
 }
 #sell h2 {
-  font-size: 52px;
-  line-height: 1.3;
+  font-size: 100px;
+  line-height: 1.2;
   margin-bottom: 10px;
-}
-#sell p {
-  font-size: 17px;
-  line-height: 26px;
-}
-#projects {
-  position: relative;
-  z-index: 1;
-  border-top: 6px solid rgba(0, 0, 0, 0.2);
-}
-#projects .project {
-  width: 25%;
-  float: left;
-  height: 205px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border-top: 2px solid rgba(0, 0, 0, 0.3);
-}
-#projects .project h3 {
-  margin-top: 155px;
-  color: #FFF;
-  font-weight: bold;
-  margin-left: 20px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  position: relative;
-  overflow: hidden;
-  padding: 8px;
-  display: inline-block;
-}
-#projects .project h3:before {
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #fff;
-  content: '';
-  -webkit-transition: top 0.2s;
-  -moz-transition: top 0.2s;
-  transition: top 0.2s;
-}
-#projects .project h3:after {
-  position: absolute;
-  top: 5px;
-  bottom: 3px;
-  left: 0;
-  width: 1px;
-  background: #fff;
-  content: '';
-}
-#projects .project.aig {
-  background: url('../img/aig.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#projects .project.usawr {
-  background: url('../img/usawr.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#projects .project.silverbacks {
-  background: url('../img/silverbacks.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#projects .project.rookie {
-  background: url('../img/rookie.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  text-align: center;
 }
 /* 2. Colors  -----------------------------------------------------*/
 /* 2. Fonts  -----------------------------------------------------*/
@@ -2356,6 +2289,45 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
 }
+body:after {
+  height: 18px;
+  width: 100%;
+  bottom: 0;
+  background: #e6e9ec;
+  position: fixed;
+  content: '';
+  z-index: 100;
+}
+body:before {
+  height: 18px;
+  width: 100%;
+  top: 0;
+  background: #e6e9ec;
+  position: fixed;
+  content: '';
+  z-index: 100;
+}
+#border-y:after {
+  height: 100%;
+  width: 18px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background: #e6e9ec;
+  position: fixed;
+  content: '';
+  z-index: 100;
+}
+#border-y:before {
+  width: 18px;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  background: #e6e9ec;
+  position: fixed;
+  z-index: 100;
+  content: '';
+}
 #wrapper {
   max-width: 1480px;
   background: #FFF;
@@ -2370,17 +2342,43 @@ a.btn {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: #c61e4d;
   color: #FFF;
   text-decoration: none;
+  margin-right: 25px;
   margin-top: 10px;
   font-size: 16px;
   display: block;
   float: left;
   font-family: "raleway";
   font-weight: bold;
+  background: #c61e4d;
+  border: 3px solid #c61e4d;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+a.btn:hover {
+  background: #df2e5f;
+  border: 3px solid #df2e5f;
 }
 a.btn.ghost {
   background: transparent;
-  border: 3px solid #c61e4d;
+  border: 3px solid #FFF;
+}
+a.btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 1340px) {
+  header {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+  }
+  .row {
+    padding: 0 100px;
+  }
+  #sell {
+    max-width: 80%;
+  }
 }
